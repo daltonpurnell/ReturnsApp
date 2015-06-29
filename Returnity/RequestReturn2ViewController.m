@@ -39,6 +39,11 @@
     
     [self.mapView setRegion:region animated:YES];
     
+    self.mapView.clipsToBounds = YES;
+    self.mapView.layer.cornerRadius = 20/2.0f;
+    self.mapView.layer.borderColor = [UIColor colorWithRed:193/255.0 green:193/255.0 blue:193/255.0 alpha:1].CGColor;
+    self.mapView.layer.borderWidth = 1.0f;
+    
 }
 
 - (void)changeDate:(UIDatePicker *)sender {
@@ -61,6 +66,7 @@
     [self.view viewWithTag:9].alpha = 0;
     [self.view viewWithTag:10].frame = datePickerTargetFrame;
     [self.view viewWithTag:11].frame = toolbarTargetFrame;
+    [self.view viewWithTag:12].frame = blurViewTargetFrame;
     [UIView setAnimationDelegate:self];
     [UIView setAnimationDidStopSelector:@selector(removeViews:)];
     [UIView commitAnimations];

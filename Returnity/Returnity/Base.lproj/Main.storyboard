@@ -18,10 +18,9 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="F2N-my-jyb">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <rect key="frame" x="16" y="148" width="568" height="357"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="600" id="9SQ-WJ-gBZ"/>
-                                    <constraint firstAttribute="width" constant="600" id="sWN-qw-Yni"/>
+                                    <constraint firstAttribute="height" constant="357" id="7eV-W8-fhQ"/>
                                 </constraints>
                             </mapView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pp3-ab-ujS">
@@ -78,12 +77,14 @@
                             <constraint firstItem="TJQ-Od-Pzm" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" constant="8" id="22M-IF-oiG"/>
                             <constraint firstItem="0YL-5S-J9x" firstAttribute="trailing" secondItem="tsR-hK-woN" secondAttribute="trailingMargin" id="24Q-Qp-iIi"/>
                             <constraint firstItem="0YL-5S-J9x" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leadingMargin" id="4te-BN-NoX"/>
-                            <constraint firstAttribute="centerX" secondItem="F2N-my-jyb" secondAttribute="centerX" id="6pa-0Q-k2a"/>
                             <constraint firstAttribute="centerX" secondItem="0YL-5S-J9x" secondAttribute="centerX" id="ErR-Cl-y14"/>
                             <constraint firstAttribute="centerX" secondItem="Nwc-n7-v4J" secondAttribute="centerX" id="Hzr-7Y-ldR"/>
-                            <constraint firstAttribute="centerY" secondItem="F2N-my-jyb" secondAttribute="centerY" id="P0W-64-bKy"/>
+                            <constraint firstItem="F2N-my-jyb" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leadingMargin" id="XmU-ik-0Iu"/>
                             <constraint firstAttribute="centerX" secondItem="Pp3-ab-ujS" secondAttribute="centerX" id="dBc-vs-0O5"/>
+                            <constraint firstItem="F2N-my-jyb" firstAttribute="trailing" secondItem="tsR-hK-woN" secondAttribute="trailingMargin" id="f0r-TL-pgK"/>
+                            <constraint firstAttribute="centerY" secondItem="F2N-my-jyb" secondAttribute="centerY" constant="-26.5" id="gMI-hR-lpo"/>
                             <constraint firstItem="0YL-5S-J9x" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" constant="8" id="jC7-bP-osF"/>
+                            <constraint firstAttribute="centerX" secondItem="F2N-my-jyb" secondAttribute="centerX" id="nik-ih-kcb"/>
                             <constraint firstItem="4ug-Mw-9AY" firstAttribute="top" secondItem="Pp3-ab-ujS" secondAttribute="bottom" constant="8" id="r70-IF-peP"/>
                             <constraint firstAttribute="trailingMargin" secondItem="TJQ-Od-Pzm" secondAttribute="trailing" constant="11" id="rgG-W4-QJT"/>
                             <constraint firstItem="Nwc-n7-v4J" firstAttribute="top" secondItem="0YL-5S-J9x" secondAttribute="bottom" constant="8" id="wtV-je-Kss"/>
@@ -119,10 +120,9 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="ehI-uY-JpL">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <rect key="frame" x="16" y="186" width="568" height="319"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="600" id="Ail-ev-2Wh"/>
-                                    <constraint firstAttribute="width" constant="600" id="JkZ-RY-zed"/>
+                                    <constraint firstAttribute="height" constant="319" id="nb7-zE-CqJ"/>
                                 </constraints>
                             </mapView>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Item Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2Qb-X1-h3l">
@@ -171,24 +171,27 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="ehI-uY-JpL" firstAttribute="top" secondItem="dRC-ZS-F6W" secondAttribute="bottom" constant="8" id="0g4-4u-qg9"/>
                             <constraint firstAttribute="centerX" secondItem="dRC-ZS-F6W" secondAttribute="centerX" id="6Qa-UD-ODo"/>
-                            <constraint firstAttribute="centerY" secondItem="ehI-uY-JpL" secondAttribute="centerY" id="Ea2-jk-Ouj"/>
+                            <constraint firstItem="ehI-uY-JpL" firstAttribute="leading" secondItem="coC-C1-kJO" secondAttribute="leadingMargin" id="9mU-sm-Z7h"/>
                             <constraint firstItem="mxZ-WT-b10" firstAttribute="top" secondItem="bho-lt-zfp" secondAttribute="bottom" constant="84" id="GJZ-XT-eE8"/>
                             <constraint firstItem="gSQ-mb-bMe" firstAttribute="trailing" secondItem="coC-C1-kJO" secondAttribute="trailingMargin" id="GTe-KA-Cpx"/>
                             <constraint firstItem="gSQ-mb-bMe" firstAttribute="leading" secondItem="coC-C1-kJO" secondAttribute="leadingMargin" id="KjK-Ci-T9h"/>
                             <constraint firstAttribute="centerX" secondItem="2Qb-X1-h3l" secondAttribute="centerX" id="SH4-c7-hsW"/>
                             <constraint firstItem="dRC-ZS-F6W" firstAttribute="trailing" secondItem="coC-C1-kJO" secondAttribute="trailingMargin" id="Tcw-ah-ii8"/>
                             <constraint firstItem="2Qb-X1-h3l" firstAttribute="trailing" secondItem="coC-C1-kJO" secondAttribute="trailingMargin" id="WnN-Ly-uWp"/>
+                            <constraint firstItem="ehI-uY-JpL" firstAttribute="top" secondItem="bho-lt-zfp" secondAttribute="bottom" constant="122" id="X9e-oU-7Xd"/>
                             <constraint firstItem="dRC-ZS-F6W" firstAttribute="top" secondItem="gSQ-mb-bMe" secondAttribute="bottom" constant="8" id="XBa-Bc-3n5"/>
                             <constraint firstAttribute="centerX" secondItem="Xlo-NG-1Nn" secondAttribute="centerX" id="cq0-M7-OF0"/>
                             <constraint firstAttribute="centerX" secondItem="gSQ-mb-bMe" secondAttribute="centerX" id="ctC-Y0-Zb4"/>
-                            <constraint firstAttribute="centerX" secondItem="ehI-uY-JpL" secondAttribute="centerX" id="hbT-10-8bY"/>
+                            <constraint firstItem="ehI-uY-JpL" firstAttribute="trailing" secondItem="coC-C1-kJO" secondAttribute="trailingMargin" id="gV1-NR-pDm"/>
                             <constraint firstItem="fJU-9P-tRI" firstAttribute="top" secondItem="Xlo-NG-1Nn" secondAttribute="bottom" constant="8" id="r1E-z7-78j"/>
                             <constraint firstItem="gSQ-mb-bMe" firstAttribute="top" secondItem="2Qb-X1-h3l" secondAttribute="bottom" constant="8" id="rye-Yw-nuu"/>
                             <constraint firstItem="dRC-ZS-F6W" firstAttribute="leading" secondItem="coC-C1-kJO" secondAttribute="leadingMargin" id="ugN-ct-YzA"/>
                             <constraint firstItem="2Qb-X1-h3l" firstAttribute="top" secondItem="bho-lt-zfp" secondAttribute="bottom" constant="8" id="vgv-V5-aKW"/>
                             <constraint firstAttribute="trailingMargin" secondItem="mxZ-WT-b10" secondAttribute="trailing" constant="11" id="wZ8-Jq-0GI"/>
                             <constraint firstItem="2Qb-X1-h3l" firstAttribute="leading" secondItem="coC-C1-kJO" secondAttribute="leadingMargin" id="xV5-mk-9Gv"/>
+                            <constraint firstAttribute="centerX" secondItem="ehI-uY-JpL" secondAttribute="centerX" id="yai-uc-FZ7"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Continued" id="pI5-7o-EQq">

@@ -25,6 +25,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
+    
     self.mapView.showsUserLocation = YES;
     self.mapView.showsPointsOfInterest = YES;
     self.mapView.delegate = self;
@@ -39,6 +40,12 @@
     MKCoordinateRegion region = MKCoordinateRegionMakeWithDistance(userLocation.location.coordinate, 20000, 20000);
     
     [self.mapView setRegion:region animated:YES];
+    
+    self.mapView.clipsToBounds = YES;
+    self.mapView.layer.cornerRadius = 20/2.0f;
+    self.mapView.layer.borderColor = [UIColor colorWithRed:193/255.0 green:193/255.0 blue:193/255.0 alpha:1].CGColor;
+    self.mapView.layer.borderWidth = 1.0f;
+
     
 }
 
