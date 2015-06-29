@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14D131" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="49e-Tb-3d3">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Request Return View Controller-->
@@ -45,21 +46,34 @@
                                 <state key="normal" title="Use Current Location">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="useCurrentLocationButtonTapped:" destination="9pv-A4-QxB" eventType="touchUpInside" id="ynt-Jv-xcd"/>
+                                </connections>
                             </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0YL-5S-J9x">
+                                <rect key="frame" x="16" y="72" width="568" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="0YL-5S-J9x" firstAttribute="trailing" secondItem="tsR-hK-woN" secondAttribute="trailingMargin" id="24Q-Qp-iIi"/>
                             <constraint firstItem="Nwc-n7-v4J" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" constant="40" id="4cA-IP-Yxh"/>
+                            <constraint firstItem="0YL-5S-J9x" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leadingMargin" id="4te-BN-NoX"/>
                             <constraint firstAttribute="centerX" secondItem="F2N-my-jyb" secondAttribute="centerX" id="6pa-0Q-k2a"/>
+                            <constraint firstAttribute="centerX" secondItem="0YL-5S-J9x" secondAttribute="centerX" id="ErR-Cl-y14"/>
                             <constraint firstAttribute="centerX" secondItem="Nwc-n7-v4J" secondAttribute="centerX" id="Hzr-7Y-ldR"/>
                             <constraint firstAttribute="centerY" secondItem="F2N-my-jyb" secondAttribute="centerY" id="P0W-64-bKy"/>
                             <constraint firstAttribute="centerX" secondItem="Pp3-ab-ujS" secondAttribute="centerX" id="dBc-vs-0O5"/>
+                            <constraint firstItem="0YL-5S-J9x" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" constant="8" id="jC7-bP-osF"/>
                             <constraint firstItem="4ug-Mw-9AY" firstAttribute="top" secondItem="Pp3-ab-ujS" secondAttribute="bottom" constant="8" id="r70-IF-peP"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="vA5-cx-YUi"/>
                     <connections>
                         <outlet property="mapView" destination="F2N-my-jyb" id="GAH-Wu-djb"/>
+                        <outlet property="searchTextField" destination="0YL-5S-J9x" id="N9Z-V5-TNS"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>

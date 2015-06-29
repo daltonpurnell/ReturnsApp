@@ -24,6 +24,10 @@
     
 }
 
+- (IBAction)useCurrentLocationButtonTapped:(id)sender {
+    
+    
+}
 
 /*
 #pragma mark - Navigation
