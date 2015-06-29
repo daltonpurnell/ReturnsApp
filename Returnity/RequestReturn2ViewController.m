@@ -49,11 +49,14 @@
     [[self.view viewWithTag:9] removeFromSuperview];
     [[self.view viewWithTag:10] removeFromSuperview];
     [[self.view viewWithTag:11] removeFromSuperview];
+    [[self.view viewWithTag:12] removeFromSuperview];
 }
 
 - (void)dismissDatePicker:(id)sender {
     CGRect toolbarTargetFrame = CGRectMake(0, self.view.bounds.size.height, self.view.frame.size.width, 44);
     CGRect datePickerTargetFrame = CGRectMake(0, self.view.bounds.size.height+44, self.view.frame.size.width, 216);
+    CGRect blurViewTargetFrame = CGRectMake(0, self.view.bounds.size.height-216, self.view.frame.size.width, 216);
+
     [UIView beginAnimations:@"MoveOut" context:nil];
     [self.view viewWithTag:9].alpha = 0;
     [self.view viewWithTag:10].frame = datePickerTargetFrame;
@@ -72,6 +75,13 @@
     }
     CGRect toolbarTargetFrame = CGRectMake(0, self.view.bounds.size.height-216-44, self.view.frame.size.width, 44);
     CGRect datePickerTargetFrame = CGRectMake(0, self.view.bounds.size.height-216, self.view.frame.size.width, 216);
+    CGRect blurViewTargetFrame = CGRectMake(0, self.view.bounds.size.height-216, self.view.frame.size.width, 216);
+
+    JCRBlurView *blurView = [JCRBlurView new];
+    [blurView setFrame:CGRectMake(0, self.view.bounds.size.height-216, self.view.frame.size.width, 216)];
+    blurView.tag = 12;
+    [self.view addSubview:blurView];
+
     
     UIView *darkView = [[UIView alloc] initWithFrame:self.view.bounds];
     darkView.alpha = 0;
@@ -97,6 +107,7 @@
     [UIView beginAnimations:@"MoveIn" context:nil];
     toolBar.frame = toolbarTargetFrame;
     datePicker.frame = datePickerTargetFrame;
+    blurView.frame = blurViewTargetFrame;
     darkView.alpha = 0.5;
     [UIView commitAnimations];
     
