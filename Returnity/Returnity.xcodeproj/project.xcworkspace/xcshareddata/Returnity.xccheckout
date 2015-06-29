@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>B0E33FF6-53B0-4D76-B4A4-1D8B4CA97DB1</string>
+	<key>IDESourceControlProjectName</key>
+	<string>project</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>631BAAD861283C9C0A095CF3B583E8122A732A4A</key>
+		<string>https://github.com/daltonpurnell/ReturnsApp.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Returnity/Returnity.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>631BAAD861283C9C0A095CF3B583E8122A732A4A</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/daltonpurnell/ReturnsApp.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>631BAAD861283C9C0A095CF3B583E8122A732A4A</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>631BAAD861283C9C0A095CF3B583E8122A732A4A</string>
+			<key>IDESourceControlWCCName</key>
+			<string>ReturnsApp</string>
+		</dict>
+	</array>
+</dict>
+</plist>

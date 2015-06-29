@@ -7,7 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+@import MapKit;
+@import CoreLocation;
+
 
 @interface RequestReturnViewController : UIViewController
+@property (weak, nonatomic) IBOutlet MKMapView *mapView;
 
 @end
