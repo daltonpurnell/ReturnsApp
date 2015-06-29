@@ -22,6 +22,7 @@
 		CFE1AE951B41BB9C007ADDC7 /* Pin.m in Sources */ = {isa = PBXBuildFile; fileRef = CFE1AE941B41BB9C007ADDC7 /* Pin.m */; };
 		CFE1AE981B41BBA7007ADDC7 /* Fence.m in Sources */ = {isa = PBXBuildFile; fileRef = CFE1AE971B41BBA7007ADDC7 /* Fence.m */; };
 		CFE1AE9A1B41D07C007ADDC7 /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFE1AE991B41D07C007ADDC7 /* CoreImage.framework */; };
+		CFE1AE9D1B41D9AE007ADDC7 /* JCRBlurView.m in Sources */ = {isa = PBXBuildFile; fileRef = CFE1AE9C1B41D9AE007ADDC7 /* JCRBlurView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,8 @@
 		CFE1AE961B41BBA7007ADDC7 /* Fence.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Fence.h; sourceTree = "<group>"; };
 		CFE1AE971B41BBA7007ADDC7 /* Fence.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Fence.m; sourceTree = "<group>"; };
 		CFE1AE991B41D07C007ADDC7 /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
+		CFE1AE9B1B41D9AE007ADDC7 /* JCRBlurView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCRBlurView.h; sourceTree = "<group>"; };
+		CFE1AE9C1B41D9AE007ADDC7 /* JCRBlurView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCRBlurView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +119,8 @@
 				CFE1AE8A1B419E15007ADDC7 /* DriverDashboardTableViewController.m */,
 				CFE1AE901B41B536007ADDC7 /* OrderDetailsViewController.h */,
 				CFE1AE911B41B536007ADDC7 /* OrderDetailsViewController.m */,
+				CFE1AE9B1B41D9AE007ADDC7 /* JCRBlurView.h */,
+				CFE1AE9C1B41D9AE007ADDC7 /* JCRBlurView.m */,
 				CFE1AE961B41BBA7007ADDC7 /* Fence.h */,
 				CFE1AE971B41BBA7007ADDC7 /* Fence.m */,
 				CFE1AE931B41BB9C007ADDC7 /* Pin.h */,
@@ -258,6 +263,7 @@
 			files = (
 				CFE1AE951B41BB9C007ADDC7 /* Pin.m in Sources */,
 				CFE1AE921B41B536007ADDC7 /* OrderDetailsViewController.m in Sources */,
+				CFE1AE9D1B41D9AE007ADDC7 /* JCRBlurView.m in Sources */,
 				CFE1AE581B419B65007ADDC7 /* AppDelegate.m in Sources */,
 				CFE1AE981B41BBA7007ADDC7 /* Fence.m in Sources */,
 				CFE1AE551B419B65007ADDC7 /* main.m in Sources */,
