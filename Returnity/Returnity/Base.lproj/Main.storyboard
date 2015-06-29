@@ -47,7 +47,7 @@
         <!--Item-->
         <scene sceneID="6BU-au-Dde">
             <objects>
-                <tableViewController id="DTf-I4-YTK" sceneMemberID="viewController">
+                <tableViewController id="DTf-I4-YTK" customClass="DriverDashboardTableViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="FbF-Nz-hmp">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
