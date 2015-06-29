@@ -73,7 +73,7 @@
                     <navigationItem key="navigationItem" id="vA5-cx-YUi">
                         <barButtonItem key="rightBarButtonItem" title="Next" id="LMi-Lf-3DG">
                             <connections>
-                                <segue destination="Zuo-qS-tXc" kind="show" id="Z5h-yf-Lov"/>
+                                <segue destination="Zuo-qS-tXc" kind="show" identifier="showNextRequestView" id="Z5h-yf-Lov"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -175,7 +175,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="cyu-eL-gX5">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="identifier" id="cyu-eL-gX5">
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="cyu-eL-gX5" id="vkn-16-0wg">
                                     <autoresizingMask key="autoresizingMask"/>
