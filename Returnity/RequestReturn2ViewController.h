@@ -11,5 +11,8 @@
 @import CoreLocation;
 
 @interface RequestReturn2ViewController : UIViewController
+@property (weak, nonatomic) IBOutlet MKMapView *mapView;
+@property (weak, nonatomic) IBOutlet UITextField *itemTextField;
+@property (weak, nonatomic) IBOutlet UITextField *priceTextField;
 
 @end

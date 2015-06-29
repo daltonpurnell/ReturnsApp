@@ -105,14 +105,37 @@
                                     <constraint firstAttribute="width" constant="600" id="JkZ-RY-zed"/>
                                 </constraints>
                             </mapView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Item Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2Qb-X1-h3l">
+                                <rect key="frame" x="16" y="72" width="568" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="words"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Price" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gSQ-mb-bMe">
+                                <rect key="frame" x="16" y="110" width="568" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="centerY" secondItem="ehI-uY-JpL" secondAttribute="centerY" id="Ea2-jk-Ouj"/>
+                            <constraint firstItem="gSQ-mb-bMe" firstAttribute="trailing" secondItem="coC-C1-kJO" secondAttribute="trailingMargin" id="GTe-KA-Cpx"/>
+                            <constraint firstItem="gSQ-mb-bMe" firstAttribute="leading" secondItem="coC-C1-kJO" secondAttribute="leadingMargin" id="KjK-Ci-T9h"/>
+                            <constraint firstAttribute="centerX" secondItem="2Qb-X1-h3l" secondAttribute="centerX" id="SH4-c7-hsW"/>
+                            <constraint firstItem="2Qb-X1-h3l" firstAttribute="trailing" secondItem="coC-C1-kJO" secondAttribute="trailingMargin" id="WnN-Ly-uWp"/>
+                            <constraint firstAttribute="centerX" secondItem="gSQ-mb-bMe" secondAttribute="centerX" id="ctC-Y0-Zb4"/>
                             <constraint firstAttribute="centerX" secondItem="ehI-uY-JpL" secondAttribute="centerX" id="hbT-10-8bY"/>
+                            <constraint firstItem="gSQ-mb-bMe" firstAttribute="top" secondItem="2Qb-X1-h3l" secondAttribute="bottom" constant="8" id="rye-Yw-nuu"/>
+                            <constraint firstItem="2Qb-X1-h3l" firstAttribute="top" secondItem="bho-lt-zfp" secondAttribute="bottom" constant="8" id="vgv-V5-aKW"/>
+                            <constraint firstItem="2Qb-X1-h3l" firstAttribute="leading" secondItem="coC-C1-kJO" secondAttribute="leadingMargin" id="xV5-mk-9Gv"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="pI5-7o-EQq"/>
+                    <connections>
+                        <outlet property="itemTextField" destination="2Qb-X1-h3l" id="0QO-94-rcr"/>
+                        <outlet property="mapView" destination="ehI-uY-JpL" id="sv5-tS-X39"/>
+                        <outlet property="priceTextField" destination="gSQ-mb-bMe" id="vGG-TA-5qN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ji8-Pk-HDc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
