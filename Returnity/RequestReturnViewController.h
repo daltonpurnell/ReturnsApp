@@ -7,12 +7,19 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Pin.h"
+
+
 @import MapKit;
 @import CoreLocation;
 
 
-@interface RequestReturnViewController : UIViewController <UITextFieldDelegate>
+@interface RequestReturnViewController : UIViewController <UITextFieldDelegate, MKMapViewDelegate, CLLocationManagerDelegate> {
+    
+    CLLocationManager *locationManager;
+}
 @property (weak, nonatomic) IBOutlet MKMapView *mapView;
 @property (weak, nonatomic) IBOutlet UITextField *searchTextField;
-
+@property(nonatomic,retain)MKAnnotationView *annotationView;
+@property(strong, nonatomic)NSMutableArray *matchingItems;
 @end

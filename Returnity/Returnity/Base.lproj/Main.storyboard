@@ -59,9 +59,23 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TJQ-Od-Pzm">
+                                <rect key="frame" x="527" y="72" width="46" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="XyS-sW-r2N"/>
+                                    <constraint firstAttribute="width" constant="46" id="cNF-Ji-NsG"/>
+                                </constraints>
+                                <state key="normal" title="search">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="searchButtonTapped:" destination="9pv-A4-QxB" eventType="touchUpInside" id="26v-aq-ItG"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="TJQ-Od-Pzm" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" constant="8" id="22M-IF-oiG"/>
                             <constraint firstItem="0YL-5S-J9x" firstAttribute="trailing" secondItem="tsR-hK-woN" secondAttribute="trailingMargin" id="24Q-Qp-iIi"/>
                             <constraint firstItem="0YL-5S-J9x" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leadingMargin" id="4te-BN-NoX"/>
                             <constraint firstAttribute="centerX" secondItem="F2N-my-jyb" secondAttribute="centerX" id="6pa-0Q-k2a"/>
@@ -71,6 +85,7 @@
                             <constraint firstAttribute="centerX" secondItem="Pp3-ab-ujS" secondAttribute="centerX" id="dBc-vs-0O5"/>
                             <constraint firstItem="0YL-5S-J9x" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" constant="8" id="jC7-bP-osF"/>
                             <constraint firstItem="4ug-Mw-9AY" firstAttribute="top" secondItem="Pp3-ab-ujS" secondAttribute="bottom" constant="8" id="r70-IF-peP"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="TJQ-Od-Pzm" secondAttribute="trailing" constant="11" id="rgG-W4-QJT"/>
                             <constraint firstItem="Nwc-n7-v4J" firstAttribute="top" secondItem="0YL-5S-J9x" secondAttribute="bottom" constant="8" id="wtV-je-Kss"/>
                         </constraints>
                     </view>
