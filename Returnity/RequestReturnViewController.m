@@ -40,11 +40,6 @@
     
     [self.mapView setRegion:region animated:YES];
     
-    self.mapView.clipsToBounds = YES;
-    self.mapView.layer.cornerRadius = 2.0/2.0f;
-    self.mapView.layer.borderColor = [UIColor lightGrayColor].CGColor;
-    self.mapView.layer.borderWidth = 1.0f;
-    
 }
 
 - (IBAction)setDeadlineButtonTapped:(id)sender {
@@ -109,6 +104,12 @@
             }
         
     }];
+    
+}
+
+-(void)mapView:(MKMapView *)mapView didUpdateUserLocation:(MKUserLocation *)userLocation {
+    
+    self.mapView.centerCoordinate = userLocation.location.coordinate;
     
 }
 

@@ -24,6 +24,15 @@
     
 }
 
+//-(BOOL)textFieldShouldReturn:(UITextField*)textfield{
+//    
+//    [self getLocalSearchResults];
+//    
+//    [textfield resignFirstResponder];
+//    
+//    return YES;
+//}
+
 /*
 #pragma mark - Navigation
 
