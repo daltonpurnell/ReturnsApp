@@ -18,6 +18,7 @@
 		CFE1AE8B1B419E15007ADDC7 /* DriverDashboardTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CFE1AE8A1B419E15007ADDC7 /* DriverDashboardTableViewController.m */; };
 		CFE1AE8D1B41A2A4007ADDC7 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFE1AE8C1B41A2A4007ADDC7 /* MapKit.framework */; };
 		CFE1AE8F1B41A2AC007ADDC7 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFE1AE8E1B41A2AC007ADDC7 /* CoreLocation.framework */; };
+		CFE1AE921B41B536007ADDC7 /* OrderDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CFE1AE911B41B536007ADDC7 /* OrderDetailsViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,8 @@
 		CFE1AE8A1B419E15007ADDC7 /* DriverDashboardTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DriverDashboardTableViewController.m; path = ../DriverDashboardTableViewController.m; sourceTree = "<group>"; };
 		CFE1AE8C1B41A2A4007ADDC7 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		CFE1AE8E1B41A2AC007ADDC7 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		CFE1AE901B41B536007ADDC7 /* OrderDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OrderDetailsViewController.h; path = ../OrderDetailsViewController.h; sourceTree = "<group>"; };
+		CFE1AE911B41B536007ADDC7 /* OrderDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OrderDetailsViewController.m; path = ../OrderDetailsViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +104,8 @@
 				CFE1AE871B419DE6007ADDC7 /* RequestReturn2ViewController.m */,
 				CFE1AE891B419E15007ADDC7 /* DriverDashboardTableViewController.h */,
 				CFE1AE8A1B419E15007ADDC7 /* DriverDashboardTableViewController.m */,
+				CFE1AE901B41B536007ADDC7 /* OrderDetailsViewController.h */,
+				CFE1AE911B41B536007ADDC7 /* OrderDetailsViewController.m */,
 				CFE1AE5F1B419B65007ADDC7 /* Main.storyboard */,
 				CFE1AE621B419B65007ADDC7 /* Images.xcassets */,
 				CFE1AE641B419B65007ADDC7 /* LaunchScreen.xib */,
@@ -237,6 +242,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CFE1AE921B41B536007ADDC7 /* OrderDetailsViewController.m in Sources */,
 				CFE1AE581B419B65007ADDC7 /* AppDelegate.m in Sources */,
 				CFE1AE551B419B65007ADDC7 /* main.m in Sources */,
 				CFE1AE851B419DBA007ADDC7 /* RequestReturnViewController.m in Sources */,

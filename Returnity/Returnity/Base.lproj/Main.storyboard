@@ -5,7 +5,7 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--Request Return View Controller-->
+        <!--Request Return-->
         <scene sceneID="hNz-n2-bh7">
             <objects>
                 <viewController id="9pv-A4-QxB" customClass="RequestReturnViewController" sceneMemberID="viewController">
@@ -26,11 +26,13 @@
                             </mapView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pp3-ab-ujS">
                                 <rect key="frame" x="214" y="513" width="172" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="X19-ju-oIM"/>
                                     <constraint firstAttribute="width" constant="172" id="pXz-kl-QgN"/>
                                 </constraints>
                                 <state key="normal" title="Set Return Deadline">
+                                    <color key="titleColor" red="0.88876448880000003" green="0.91137282289999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -39,11 +41,13 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nwc-n7-v4J">
                                 <rect key="frame" x="214" y="104" width="172" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="172" id="XSG-Ae-fWb"/>
                                     <constraint firstAttribute="height" constant="30" id="am2-6f-wWG"/>
                                 </constraints>
                                 <state key="normal" title="Use Current Location">
+                                    <color key="titleColor" red="0.88876448880000003" green="0.91137282289999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -70,7 +74,7 @@
                             <constraint firstItem="4ug-Mw-9AY" firstAttribute="top" secondItem="Pp3-ab-ujS" secondAttribute="bottom" constant="8" id="r70-IF-peP"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="vA5-cx-YUi">
+                    <navigationItem key="navigationItem" title="Request Return" id="vA5-cx-YUi">
                         <barButtonItem key="rightBarButtonItem" title="Next" id="LMi-Lf-3DG">
                             <connections>
                                 <segue destination="Zuo-qS-tXc" kind="show" identifier="showNextRequestView" id="Z5h-yf-Lov"/>
@@ -86,7 +90,7 @@
             </objects>
             <point key="canvasLocation" x="1369" y="-320"/>
         </scene>
-        <!--Request Return2 View Controller-->
+        <!--Continued-->
         <scene sceneID="qLk-8Z-UuU">
             <objects>
                 <viewController id="N5O-rS-Vtn" customClass="RequestReturn2ViewController" sceneMemberID="viewController">
@@ -122,11 +126,13 @@
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xlo-NG-1Nn">
                                 <rect key="frame" x="212" y="513" width="177" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="fpw-UQ-aaW"/>
                                     <constraint firstAttribute="width" constant="177" id="wKB-6J-dvs"/>
                                 </constraints>
                                 <state key="normal" title="Set Return Deadline">
+                                    <color key="titleColor" red="0.88876448880000003" green="0.91137282289999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -154,7 +160,13 @@
                             <constraint firstItem="2Qb-X1-h3l" firstAttribute="leading" secondItem="coC-C1-kJO" secondAttribute="leadingMargin" id="xV5-mk-9Gv"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="pI5-7o-EQq"/>
+                    <navigationItem key="navigationItem" title="Continued" id="pI5-7o-EQq">
+                        <barButtonItem key="rightBarButtonItem" title="Next" id="IU7-Ly-Ujc">
+                            <connections>
+                                <segue destination="7IP-Rg-Z6o" kind="show" identifier="showOrderDetails" id="IJT-ZH-ebX"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="itemTextField" destination="2Qb-X1-h3l" id="0QO-94-rcr"/>
                         <outlet property="mapView" destination="ehI-uY-JpL" id="sv5-tS-X39"/>
@@ -165,6 +177,112 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ji8-Pk-HDc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2641" y="-320"/>
+        </scene>
+        <!--Order Details-->
+        <scene sceneID="BiB-gE-99z">
+            <objects>
+                <viewController id="dU1-PI-dgX" customClass="OrderDetailsViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="wLZ-qF-d7P"/>
+                        <viewControllerLayoutGuide type="bottom" id="PEw-Oj-uSu"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="6NF-jk-XNp">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Price (percentage driver will make):" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m4y-2X-90M">
+                                <rect key="frame" x="16" y="72" width="568" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pickup Location:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="msr-qZ-2Ga">
+                                <rect key="frame" x="16" y="101" width="568" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pickup Deadline:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lm2-MY-Rpo">
+                                <rect key="frame" x="16" y="130" width="568" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Return Location:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N0Q-Bz-GE9">
+                                <rect key="frame" x="16" y="159" width="568" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Return Deadline:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FD5-og-qoq">
+                                <rect key="frame" x="16" y="188" width="568" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9mC-f9-kGn">
+                                <rect key="frame" x="16" y="285" width="568" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="We will send you an email when a driver claims your return" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UaB-d3-Tmx">
+                                <rect key="frame" x="16" y="323" width="568" height="85"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="568" id="iWj-Fn-Wu9"/>
+                                    <constraint firstAttribute="height" constant="85" id="y35-Kx-7S5"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerY" secondItem="9mC-f9-kGn" secondAttribute="centerY" id="5nA-ft-QpP"/>
+                            <constraint firstAttribute="centerX" secondItem="msr-qZ-2Ga" secondAttribute="centerX" id="6Fc-GQ-ri8"/>
+                            <constraint firstAttribute="centerX" secondItem="9mC-f9-kGn" secondAttribute="centerX" id="7WQ-4C-t7c"/>
+                            <constraint firstItem="lm2-MY-Rpo" firstAttribute="leading" secondItem="6NF-jk-XNp" secondAttribute="leadingMargin" id="BQs-8O-CYy"/>
+                            <constraint firstItem="UaB-d3-Tmx" firstAttribute="top" secondItem="9mC-f9-kGn" secondAttribute="bottom" constant="8" id="CI8-aR-MJw"/>
+                            <constraint firstAttribute="centerX" secondItem="lm2-MY-Rpo" secondAttribute="centerX" id="GLt-ML-Mo2"/>
+                            <constraint firstItem="9mC-f9-kGn" firstAttribute="leading" secondItem="6NF-jk-XNp" secondAttribute="leadingMargin" id="LIU-es-lej"/>
+                            <constraint firstItem="msr-qZ-2Ga" firstAttribute="trailing" secondItem="6NF-jk-XNp" secondAttribute="trailingMargin" id="Oi2-hS-Xj6"/>
+                            <constraint firstItem="msr-qZ-2Ga" firstAttribute="top" secondItem="m4y-2X-90M" secondAttribute="bottom" constant="8" id="Pbk-2a-fen"/>
+                            <constraint firstItem="lm2-MY-Rpo" firstAttribute="top" secondItem="msr-qZ-2Ga" secondAttribute="bottom" constant="8" id="QD3-p6-ow8"/>
+                            <constraint firstItem="N0Q-Bz-GE9" firstAttribute="leading" secondItem="6NF-jk-XNp" secondAttribute="leadingMargin" id="RaU-1d-EWi"/>
+                            <constraint firstAttribute="centerX" secondItem="UaB-d3-Tmx" secondAttribute="centerX" id="Wvk-qP-Nlt"/>
+                            <constraint firstAttribute="centerX" secondItem="m4y-2X-90M" secondAttribute="centerX" id="Xs7-HV-eOf"/>
+                            <constraint firstAttribute="centerX" secondItem="N0Q-Bz-GE9" secondAttribute="centerX" id="Y3u-uM-9Lf"/>
+                            <constraint firstItem="N0Q-Bz-GE9" firstAttribute="top" secondItem="lm2-MY-Rpo" secondAttribute="bottom" constant="8" id="YwA-H8-vY8"/>
+                            <constraint firstItem="FD5-og-qoq" firstAttribute="trailing" secondItem="6NF-jk-XNp" secondAttribute="trailingMargin" id="ahq-iS-nf8"/>
+                            <constraint firstItem="UaB-d3-Tmx" firstAttribute="leading" secondItem="6NF-jk-XNp" secondAttribute="leadingMargin" id="bNB-7z-Frm"/>
+                            <constraint firstItem="UaB-d3-Tmx" firstAttribute="trailing" secondItem="6NF-jk-XNp" secondAttribute="trailingMargin" id="dfk-Wl-nWB"/>
+                            <constraint firstItem="FD5-og-qoq" firstAttribute="leading" secondItem="6NF-jk-XNp" secondAttribute="leadingMargin" id="eXp-AN-PM5"/>
+                            <constraint firstAttribute="centerX" secondItem="FD5-og-qoq" secondAttribute="centerX" id="f3n-Xz-fpp"/>
+                            <constraint firstItem="msr-qZ-2Ga" firstAttribute="leading" secondItem="6NF-jk-XNp" secondAttribute="leadingMargin" id="jmS-w8-VhS"/>
+                            <constraint firstItem="9mC-f9-kGn" firstAttribute="trailing" secondItem="6NF-jk-XNp" secondAttribute="trailingMargin" id="lkX-sW-Bye"/>
+                            <constraint firstItem="m4y-2X-90M" firstAttribute="trailing" secondItem="6NF-jk-XNp" secondAttribute="trailingMargin" id="mZP-Cr-lKz"/>
+                            <constraint firstItem="FD5-og-qoq" firstAttribute="top" secondItem="N0Q-Bz-GE9" secondAttribute="bottom" constant="8" id="oaF-L3-dOi"/>
+                            <constraint firstItem="N0Q-Bz-GE9" firstAttribute="trailing" secondItem="6NF-jk-XNp" secondAttribute="trailingMargin" id="oqk-b1-ZIA"/>
+                            <constraint firstItem="m4y-2X-90M" firstAttribute="top" secondItem="wLZ-qF-d7P" secondAttribute="bottom" constant="8" id="sxf-ct-DC2"/>
+                            <constraint firstItem="m4y-2X-90M" firstAttribute="leading" secondItem="6NF-jk-XNp" secondAttribute="leadingMargin" id="veA-Pb-BKq"/>
+                            <constraint firstItem="lm2-MY-Rpo" firstAttribute="trailing" secondItem="6NF-jk-XNp" secondAttribute="trailingMargin" id="xxs-3A-bSb"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Order Details" id="0j9-g7-Zl7">
+                        <barButtonItem key="rightBarButtonItem" title="Check Out" id="NdU-kx-SgW"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="emailTextField" destination="9mC-f9-kGn" id="xpP-zl-OIk"/>
+                        <outlet property="pickupDeadlineLabel" destination="lm2-MY-Rpo" id="zZT-6T-TVq"/>
+                        <outlet property="pickupLocationLabel" destination="msr-qZ-2Ga" id="nhW-Zn-vyq"/>
+                        <outlet property="priceLabel" destination="m4y-2X-90M" id="HRw-Ko-YiL"/>
+                        <outlet property="returnDeadlineLabel" destination="FD5-og-qoq" id="X99-Gw-609"/>
+                        <outlet property="returnLocationLabel" destination="N0Q-Bz-GE9" id="OIy-PX-MYV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UoH-rR-KPz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3917" y="-322"/>
         </scene>
         <!--Driver Dashboard Table View Controller-->
         <scene sceneID="6BU-au-Dde">
@@ -267,6 +385,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zV8-BF-yTF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2003" y="-320"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="7JH-wa-Srd">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="7IP-Rg-Z6o" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="bo4-lO-mVG">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="dU1-PI-dgX" kind="relationship" relationship="rootViewController" id="6nd-2f-3Gj"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="URU-jn-xrp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3282" y="-322"/>
         </scene>
     </scenes>
     <resources>
