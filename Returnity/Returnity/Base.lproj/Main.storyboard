@@ -40,7 +40,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nwc-n7-v4J">
-                                <rect key="frame" x="214" y="104" width="172" height="30"/>
+                                <rect key="frame" x="214" y="110" width="172" height="30"/>
                                 <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="172" id="XSG-Ae-fWb"/>
@@ -54,7 +54,7 @@
                                     <action selector="useCurrentLocationButtonTapped:" destination="9pv-A4-QxB" eventType="touchUpInside" id="ynt-Jv-xcd"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0YL-5S-J9x">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Set Pickup Location" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0YL-5S-J9x">
                                 <rect key="frame" x="16" y="72" width="568" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -63,7 +63,6 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="0YL-5S-J9x" firstAttribute="trailing" secondItem="tsR-hK-woN" secondAttribute="trailingMargin" id="24Q-Qp-iIi"/>
-                            <constraint firstItem="Nwc-n7-v4J" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" constant="40" id="4cA-IP-Yxh"/>
                             <constraint firstItem="0YL-5S-J9x" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leadingMargin" id="4te-BN-NoX"/>
                             <constraint firstAttribute="centerX" secondItem="F2N-my-jyb" secondAttribute="centerX" id="6pa-0Q-k2a"/>
                             <constraint firstAttribute="centerX" secondItem="0YL-5S-J9x" secondAttribute="centerX" id="ErR-Cl-y14"/>
@@ -72,6 +71,7 @@
                             <constraint firstAttribute="centerX" secondItem="Pp3-ab-ujS" secondAttribute="centerX" id="dBc-vs-0O5"/>
                             <constraint firstItem="0YL-5S-J9x" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" constant="8" id="jC7-bP-osF"/>
                             <constraint firstItem="4ug-Mw-9AY" firstAttribute="top" secondItem="Pp3-ab-ujS" secondAttribute="bottom" constant="8" id="r70-IF-peP"/>
+                            <constraint firstItem="Nwc-n7-v4J" firstAttribute="top" secondItem="0YL-5S-J9x" secondAttribute="bottom" constant="8" id="wtV-je-Kss"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Request Return" id="vA5-cx-YUi">
@@ -228,7 +228,6 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="We will send you an email when a driver claims your return" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UaB-d3-Tmx">
                                 <rect key="frame" x="16" y="323" width="568" height="85"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="568" id="iWj-Fn-Wu9"/>
                                     <constraint firstAttribute="height" constant="85" id="y35-Kx-7S5"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
