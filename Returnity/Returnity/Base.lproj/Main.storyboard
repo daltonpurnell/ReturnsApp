@@ -99,6 +99,7 @@
                     <connections>
                         <outlet property="mapView" destination="F2N-my-jyb" id="GAH-Wu-djb"/>
                         <outlet property="searchTextField" destination="0YL-5S-J9x" id="N9Z-V5-TNS"/>
+                        <outlet property="setDeadlineButton" destination="Pp3-ab-ujS" id="Ag1-jx-MbT"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
@@ -202,6 +203,7 @@
                         <outlet property="mapView" destination="ehI-uY-JpL" id="sv5-tS-X39"/>
                         <outlet property="priceTextField" destination="gSQ-mb-bMe" id="vGG-TA-5qN"/>
                         <outlet property="searchTextField" destination="dRC-ZS-F6W" id="c7y-Vd-xFv"/>
+                        <outlet property="setDeadlineButton" destination="Xlo-NG-1Nn" id="pAe-FU-imt"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ji8-Pk-HDc" userLabel="First Responder" sceneMemberID="firstResponder"/>

@@ -61,6 +61,7 @@
     [UIView setAnimationDelegate:self];
     [UIView setAnimationDidStopSelector:@selector(removeViews:)];
     [UIView commitAnimations];
+    self.setDeadlineButton.hidden = NO;
 }
 
 
@@ -99,6 +100,7 @@
     darkView.alpha = 0.5;
     [UIView commitAnimations];
     
+    self.setDeadlineButton.hidden = YES;
 
 }
 - (IBAction)searchButtonTapped:(id)sender {
