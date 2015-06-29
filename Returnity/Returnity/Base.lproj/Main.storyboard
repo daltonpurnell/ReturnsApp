@@ -115,17 +115,41 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
                             </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Return to" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dRC-ZS-F6W">
+                                <rect key="frame" x="16" y="148" width="568" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xlo-NG-1Nn">
+                                <rect key="frame" x="212" y="513" width="177" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="fpw-UQ-aaW"/>
+                                    <constraint firstAttribute="width" constant="177" id="wKB-6J-dvs"/>
+                                </constraints>
+                                <state key="normal" title="Set Return Deadline">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="setDeadlineButtonTapped:" destination="N5O-rS-Vtn" eventType="touchUpInside" id="L2p-L6-r0f"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstAttribute="centerX" secondItem="dRC-ZS-F6W" secondAttribute="centerX" id="6Qa-UD-ODo"/>
                             <constraint firstAttribute="centerY" secondItem="ehI-uY-JpL" secondAttribute="centerY" id="Ea2-jk-Ouj"/>
                             <constraint firstItem="gSQ-mb-bMe" firstAttribute="trailing" secondItem="coC-C1-kJO" secondAttribute="trailingMargin" id="GTe-KA-Cpx"/>
                             <constraint firstItem="gSQ-mb-bMe" firstAttribute="leading" secondItem="coC-C1-kJO" secondAttribute="leadingMargin" id="KjK-Ci-T9h"/>
                             <constraint firstAttribute="centerX" secondItem="2Qb-X1-h3l" secondAttribute="centerX" id="SH4-c7-hsW"/>
+                            <constraint firstItem="dRC-ZS-F6W" firstAttribute="trailing" secondItem="coC-C1-kJO" secondAttribute="trailingMargin" id="Tcw-ah-ii8"/>
                             <constraint firstItem="2Qb-X1-h3l" firstAttribute="trailing" secondItem="coC-C1-kJO" secondAttribute="trailingMargin" id="WnN-Ly-uWp"/>
+                            <constraint firstItem="dRC-ZS-F6W" firstAttribute="top" secondItem="gSQ-mb-bMe" secondAttribute="bottom" constant="8" id="XBa-Bc-3n5"/>
+                            <constraint firstAttribute="centerX" secondItem="Xlo-NG-1Nn" secondAttribute="centerX" id="cq0-M7-OF0"/>
                             <constraint firstAttribute="centerX" secondItem="gSQ-mb-bMe" secondAttribute="centerX" id="ctC-Y0-Zb4"/>
                             <constraint firstAttribute="centerX" secondItem="ehI-uY-JpL" secondAttribute="centerX" id="hbT-10-8bY"/>
+                            <constraint firstItem="fJU-9P-tRI" firstAttribute="top" secondItem="Xlo-NG-1Nn" secondAttribute="bottom" constant="8" id="r1E-z7-78j"/>
                             <constraint firstItem="gSQ-mb-bMe" firstAttribute="top" secondItem="2Qb-X1-h3l" secondAttribute="bottom" constant="8" id="rye-Yw-nuu"/>
+                            <constraint firstItem="dRC-ZS-F6W" firstAttribute="leading" secondItem="coC-C1-kJO" secondAttribute="leadingMargin" id="ugN-ct-YzA"/>
                             <constraint firstItem="2Qb-X1-h3l" firstAttribute="top" secondItem="bho-lt-zfp" secondAttribute="bottom" constant="8" id="vgv-V5-aKW"/>
                             <constraint firstItem="2Qb-X1-h3l" firstAttribute="leading" secondItem="coC-C1-kJO" secondAttribute="leadingMargin" id="xV5-mk-9Gv"/>
                         </constraints>
@@ -135,6 +159,7 @@
                         <outlet property="itemTextField" destination="2Qb-X1-h3l" id="0QO-94-rcr"/>
                         <outlet property="mapView" destination="ehI-uY-JpL" id="sv5-tS-X39"/>
                         <outlet property="priceTextField" destination="gSQ-mb-bMe" id="vGG-TA-5qN"/>
+                        <outlet property="searchTextField" destination="dRC-ZS-F6W" id="c7y-Vd-xFv"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ji8-Pk-HDc" userLabel="First Responder" sceneMemberID="firstResponder"/>
