@@ -10,7 +10,7 @@
 @import MapKit;
 @import CoreLocation;
 
-@interface RequestReturn2ViewController : UIViewController
+@interface RequestReturn2ViewController : UIViewController <UITextFieldDelegate>
 @property (weak, nonatomic) IBOutlet MKMapView *mapView;
 @property (weak, nonatomic) IBOutlet UITextField *itemTextField;
 @property (weak, nonatomic) IBOutlet UITextField *priceTextField;

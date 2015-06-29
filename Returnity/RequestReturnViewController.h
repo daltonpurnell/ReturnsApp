@@ -11,7 +11,7 @@
 @import CoreLocation;
 
 
-@interface RequestReturnViewController : UIViewController
+@interface RequestReturnViewController : UIViewController <UITextFieldDelegate>
 @property (weak, nonatomic) IBOutlet MKMapView *mapView;
 @property (weak, nonatomic) IBOutlet UITextField *searchTextField;
 

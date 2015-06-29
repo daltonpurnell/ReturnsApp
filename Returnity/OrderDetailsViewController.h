@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface OrderDetailsViewController : UIViewController
+@interface OrderDetailsViewController : UIViewController <UITextFieldDelegate>
 @property (weak, nonatomic) IBOutlet UILabel *priceLabel;
 @property (weak, nonatomic) IBOutlet UILabel *pickupLocationLabel;
 @property (weak, nonatomic) IBOutlet UILabel *pickupDeadlineLabel;
