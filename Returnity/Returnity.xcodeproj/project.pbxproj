@@ -23,6 +23,7 @@
 		CFE1AE981B41BBA7007ADDC7 /* Fence.m in Sources */ = {isa = PBXBuildFile; fileRef = CFE1AE971B41BBA7007ADDC7 /* Fence.m */; };
 		CFE1AE9A1B41D07C007ADDC7 /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFE1AE991B41D07C007ADDC7 /* CoreImage.framework */; };
 		CFE1AE9D1B41D9AE007ADDC7 /* JCRBlurView.m in Sources */ = {isa = PBXBuildFile; fileRef = CFE1AE9C1B41D9AE007ADDC7 /* JCRBlurView.m */; };
+		CFE1AEA01B41E18C007ADDC7 /* Appearance.m in Sources */ = {isa = PBXBuildFile; fileRef = CFE1AE9F1B41E18C007ADDC7 /* Appearance.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +65,8 @@
 		CFE1AE991B41D07C007ADDC7 /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
 		CFE1AE9B1B41D9AE007ADDC7 /* JCRBlurView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCRBlurView.h; sourceTree = "<group>"; };
 		CFE1AE9C1B41D9AE007ADDC7 /* JCRBlurView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCRBlurView.m; sourceTree = "<group>"; };
+		CFE1AE9E1B41E18C007ADDC7 /* Appearance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Appearance.h; sourceTree = "<group>"; };
+		CFE1AE9F1B41E18C007ADDC7 /* Appearance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Appearance.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +128,8 @@
 				CFE1AE971B41BBA7007ADDC7 /* Fence.m */,
 				CFE1AE931B41BB9C007ADDC7 /* Pin.h */,
 				CFE1AE941B41BB9C007ADDC7 /* Pin.m */,
+				CFE1AE9E1B41E18C007ADDC7 /* Appearance.h */,
+				CFE1AE9F1B41E18C007ADDC7 /* Appearance.m */,
 				CFE1AE5F1B419B65007ADDC7 /* Main.storyboard */,
 				CFE1AE621B419B65007ADDC7 /* Images.xcassets */,
 				CFE1AE641B419B65007ADDC7 /* LaunchScreen.xib */,
@@ -270,6 +275,7 @@
 				CFE1AE851B419DBA007ADDC7 /* RequestReturnViewController.m in Sources */,
 				CFE1AE881B419DE6007ADDC7 /* RequestReturn2ViewController.m in Sources */,
 				CFE1AE8B1B419E15007ADDC7 /* DriverDashboardTableViewController.m in Sources */,
+				CFE1AEA01B41E18C007ADDC7 /* Appearance.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Appearance.h"
 
 @interface OrderDetailsViewController : UIViewController <UITextFieldDelegate>
 @property (weak, nonatomic) IBOutlet UILabel *priceLabel;

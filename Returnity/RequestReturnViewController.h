@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "Pin.h"
 #import "JCRBlurView.h"
+#import "Appearance.h"
 
 
 @import CoreImage;
