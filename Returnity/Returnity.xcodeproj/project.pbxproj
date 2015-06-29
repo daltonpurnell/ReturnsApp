@@ -21,6 +21,7 @@
 		CFE1AE921B41B536007ADDC7 /* OrderDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CFE1AE911B41B536007ADDC7 /* OrderDetailsViewController.m */; };
 		CFE1AE951B41BB9C007ADDC7 /* Pin.m in Sources */ = {isa = PBXBuildFile; fileRef = CFE1AE941B41BB9C007ADDC7 /* Pin.m */; };
 		CFE1AE981B41BBA7007ADDC7 /* Fence.m in Sources */ = {isa = PBXBuildFile; fileRef = CFE1AE971B41BBA7007ADDC7 /* Fence.m */; };
+		CFE1AE9A1B41D07C007ADDC7 /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFE1AE991B41D07C007ADDC7 /* CoreImage.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		CFE1AE941B41BB9C007ADDC7 /* Pin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Pin.m; sourceTree = "<group>"; };
 		CFE1AE961B41BBA7007ADDC7 /* Fence.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Fence.h; sourceTree = "<group>"; };
 		CFE1AE971B41BBA7007ADDC7 /* Fence.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Fence.m; sourceTree = "<group>"; };
+		CFE1AE991B41D07C007ADDC7 /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CFE1AE9A1B41D07C007ADDC7 /* CoreImage.framework in Frameworks */,
 				CFE1AE8F1B41A2AC007ADDC7 /* CoreLocation.framework in Frameworks */,
 				CFE1AE8D1B41A2A4007ADDC7 /* MapKit.framework in Frameworks */,
 			);
@@ -84,6 +87,7 @@
 		CFE1AE461B419B65007ADDC7 = {
 			isa = PBXGroup;
 			children = (
+				CFE1AE991B41D07C007ADDC7 /* CoreImage.framework */,
 				CFE1AE511B419B65007ADDC7 /* Returnity */,
 				CFE1AE6E1B419B65007ADDC7 /* ReturnityTests */,
 				CFE1AE501B419B65007ADDC7 /* Products */,

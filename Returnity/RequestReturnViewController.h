@@ -10,6 +10,7 @@
 #import "Pin.h"
 
 
+@import CoreImage;
 @import MapKit;
 @import CoreLocation;
 
