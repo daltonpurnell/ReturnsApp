@@ -24,6 +24,7 @@
 @property (weak, nonatomic) IBOutlet UITextField *itemTextField;
 @property (weak, nonatomic) IBOutlet UITextField *priceTextField;
 @property (weak, nonatomic) IBOutlet UITextField *searchTextField;
+@property (weak, nonatomic) IBOutlet UITextField *sizeTextField;
 @property(nonatomic,retain)MKAnnotationView *annotationView;
 @property(strong, nonatomic)NSMutableArray *matchingItems;
 @end
