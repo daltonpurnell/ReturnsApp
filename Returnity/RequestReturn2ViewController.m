@@ -44,6 +44,12 @@
     self.mapView.layer.borderColor = [UIColor colorWithRed:193/255.0 green:193/255.0 blue:193/255.0 alpha:1].CGColor;
     self.mapView.layer.borderWidth = 1.0f;
     
+    self.searchTextField.delegate = self;
+    self.itemTextField.delegate = self;
+    self.priceTextField.delegate = self;
+    self.sizeTextField.delegate = self;
+    
+    
 }
 
 - (void)changeDate:(UIDatePicker *)sender {

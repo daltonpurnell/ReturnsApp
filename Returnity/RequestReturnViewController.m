@@ -45,6 +45,8 @@
     self.mapView.layer.cornerRadius = 20/2.0f;
     self.mapView.layer.borderColor = [UIColor colorWithRed:193/255.0 green:193/255.0 blue:193/255.0 alpha:1].CGColor;
     self.mapView.layer.borderWidth = 1.0f;
+    
+    self.searchTextField.delegate = self;
 
 }
 

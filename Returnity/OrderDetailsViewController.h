@@ -16,6 +16,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *returnLocationLabel;
 @property (weak, nonatomic) IBOutlet UILabel *returnDeadlineLabel;
 @property (weak, nonatomic) IBOutlet UITextField *emailTextField;
+@property (weak, nonatomic) IBOutlet UILabel *approximateSizeLabel;
 
 
 @end

@@ -154,7 +154,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="words"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Price" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gSQ-mb-bMe">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Price (what you paid for it)" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gSQ-mb-bMe">
                                 <rect key="frame" x="16" y="110" width="568" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
@@ -308,6 +308,12 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Approximate Size:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6ci-cJ-PGu">
+                                <rect key="frame" x="16" y="217" width="568" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -316,18 +322,22 @@
                             <constraint firstAttribute="centerX" secondItem="9mC-f9-kGn" secondAttribute="centerX" id="7WQ-4C-t7c"/>
                             <constraint firstItem="lm2-MY-Rpo" firstAttribute="leading" secondItem="6NF-jk-XNp" secondAttribute="leadingMargin" id="BQs-8O-CYy"/>
                             <constraint firstItem="UaB-d3-Tmx" firstAttribute="top" secondItem="9mC-f9-kGn" secondAttribute="bottom" constant="8" id="CI8-aR-MJw"/>
+                            <constraint firstItem="6ci-cJ-PGu" firstAttribute="top" secondItem="FD5-og-qoq" secondAttribute="bottom" constant="8" id="Dlo-7M-65t"/>
                             <constraint firstAttribute="centerX" secondItem="lm2-MY-Rpo" secondAttribute="centerX" id="GLt-ML-Mo2"/>
                             <constraint firstItem="9mC-f9-kGn" firstAttribute="leading" secondItem="6NF-jk-XNp" secondAttribute="leadingMargin" id="LIU-es-lej"/>
                             <constraint firstItem="msr-qZ-2Ga" firstAttribute="trailing" secondItem="6NF-jk-XNp" secondAttribute="trailingMargin" id="Oi2-hS-Xj6"/>
                             <constraint firstItem="msr-qZ-2Ga" firstAttribute="top" secondItem="m4y-2X-90M" secondAttribute="bottom" constant="8" id="Pbk-2a-fen"/>
                             <constraint firstItem="lm2-MY-Rpo" firstAttribute="top" secondItem="msr-qZ-2Ga" secondAttribute="bottom" constant="8" id="QD3-p6-ow8"/>
                             <constraint firstItem="N0Q-Bz-GE9" firstAttribute="leading" secondItem="6NF-jk-XNp" secondAttribute="leadingMargin" id="RaU-1d-EWi"/>
+                            <constraint firstItem="6ci-cJ-PGu" firstAttribute="trailing" secondItem="6NF-jk-XNp" secondAttribute="trailingMargin" id="VfY-I7-Jfd"/>
                             <constraint firstAttribute="centerX" secondItem="UaB-d3-Tmx" secondAttribute="centerX" id="Wvk-qP-Nlt"/>
+                            <constraint firstAttribute="centerX" secondItem="6ci-cJ-PGu" secondAttribute="centerX" id="XV2-wB-Gb3"/>
                             <constraint firstAttribute="centerX" secondItem="m4y-2X-90M" secondAttribute="centerX" id="Xs7-HV-eOf"/>
                             <constraint firstAttribute="centerX" secondItem="N0Q-Bz-GE9" secondAttribute="centerX" id="Y3u-uM-9Lf"/>
                             <constraint firstItem="N0Q-Bz-GE9" firstAttribute="top" secondItem="lm2-MY-Rpo" secondAttribute="bottom" constant="8" id="YwA-H8-vY8"/>
                             <constraint firstItem="FD5-og-qoq" firstAttribute="trailing" secondItem="6NF-jk-XNp" secondAttribute="trailingMargin" id="ahq-iS-nf8"/>
                             <constraint firstItem="UaB-d3-Tmx" firstAttribute="leading" secondItem="6NF-jk-XNp" secondAttribute="leadingMargin" id="bNB-7z-Frm"/>
+                            <constraint firstItem="6ci-cJ-PGu" firstAttribute="leading" secondItem="6NF-jk-XNp" secondAttribute="leadingMargin" id="cNe-mr-M32"/>
                             <constraint firstItem="UaB-d3-Tmx" firstAttribute="trailing" secondItem="6NF-jk-XNp" secondAttribute="trailingMargin" id="dfk-Wl-nWB"/>
                             <constraint firstItem="FD5-og-qoq" firstAttribute="leading" secondItem="6NF-jk-XNp" secondAttribute="leadingMargin" id="eXp-AN-PM5"/>
                             <constraint firstAttribute="centerX" secondItem="FD5-og-qoq" secondAttribute="centerX" id="f3n-Xz-fpp"/>
@@ -345,6 +355,7 @@
                         <barButtonItem key="rightBarButtonItem" title="Check Out" id="NdU-kx-SgW"/>
                     </navigationItem>
                     <connections>
+                        <outlet property="approximateSizeLabel" destination="6ci-cJ-PGu" id="87T-ws-dsi"/>
                         <outlet property="emailTextField" destination="9mC-f9-kGn" id="xpP-zl-OIk"/>
                         <outlet property="pickupDeadlineLabel" destination="lm2-MY-Rpo" id="zZT-6T-TVq"/>
                         <outlet property="pickupLocationLabel" destination="msr-qZ-2Ga" id="nhW-Zn-vyq"/>
